@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapyDelegator", "ScrapyDelegator\ScrapyDelegator.csproj", "{B33D3E76-6DDE-4181-BA12-044B9D91E3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDDB", "SDDB\SDDB.csproj", "{CDC0E90E-71DA-40AE-9C4E-089764846846}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B33D3E76-6DDE-4181-BA12-044B9D91E3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33D3E76-6DDE-4181-BA12-044B9D91E3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33D3E76-6DDE-4181-BA12-044B9D91E3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33D3E76-6DDE-4181-BA12-044B9D91E3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC0E90E-71DA-40AE-9C4E-089764846846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC0E90E-71DA-40AE-9C4E-089764846846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC0E90E-71DA-40AE-9C4E-089764846846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC0E90E-71DA-40AE-9C4E-089764846846}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5575B053-EEB0-400A-A1D2-C2F475869E7C}
+	EndGlobalSection
+EndGlobal
