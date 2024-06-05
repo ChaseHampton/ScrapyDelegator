@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  scrapydelegator:
+    image: ${DOCKER_REGISTRY-}scrapydelegator
+    build:
+      context: .
+      dockerfile: ScrapyDelegator/Dockerfile
+
+  sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      MSSQL_SA_PASSWORD: "C3P0Wh1n35"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1432:1433"
+  
+  scrapyd:
+    image: zentekmx/scrapyd
+    ports:
+      - 6800:6800
+    volumes:
+      - scrapyd-volume:/scrapyd:Z
+
+volumes:
+  scrapyd-volume: 

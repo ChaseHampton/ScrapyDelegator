@@ -1,9 +1,19 @@
+using SDDB;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddDbContext<SDDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("sqlServer")));
+builder.Services.AddHttpClient("scrapyd", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:6800");
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
